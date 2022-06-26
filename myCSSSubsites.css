@@ -1,0 +1,152 @@
+header {
+    display: flex;
+    padding: 50px 15vw 15px 15vw;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: thistle;
+    z-index: 1;
+}
+
+html,
+body {
+    width: 100vw;
+    margin: auto;
+    font-size: 24px;
+}
+
+h2,
+h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: lighter;
+}
+
+img {
+    max-height: 500px;
+    max-width: 500px;
+    -webkit-user-drag: none;
+    box-shadow: 5.85px 5.46px 23px 2px rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#logoAlt,
+#logoNeu {
+    max-height: 250px;
+    box-shadow: none;
+}
+
+video {
+    max-height: 500px;
+    -webkit-user-drag: none;
+    box-shadow: 5.85px 5.46px 23px 2px rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    margin-left: 25px;
+}
+
+.User:hover {
+    color: #FFD84C;
+}
+
+.Experience:hover {
+    color: #E4AAFF;
+}
+
+.Design:hover {
+    color: #A9CDDD;
+}
+
+.padding {
+    padding-top: 50px;
+}
+
+.text {
+    padding: 0 15vw 0 15vw;
+    white-space: pre-line;
+}
+
+.overview {
+    padding-right: 40vw;
+    white-space: pre-line;
+}
+
+.step {
+    font-weight: 800;
+    white-space: pre-line;
+}
+
+p {
+    font-weight: 400;
+    white-space: pre-line;
+}
+
+.projectBox {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.SubsiteUser .background {
+    background-color: #FFD84C;
+}
+
+.SubsiteExperience .background{
+    background-color: #E4AAFF;
+}
+
+.SubsiteDesign .background {
+    background-color: #A9CDDD;
+}
+
+.SubsiteUser hr {
+    border: 1px solid #FFD84C;
+    width: 90%;
+}
+
+.SubsiteExperience hr {
+    border: 1px solid #E4AAFF;
+    width: 90%;
+}
+
+.SubsiteDesign hr {
+    border: 1px solid #A9CDDD;
+    width: 90%;
+}
+
+.container {
+    padding-top: 92px;
+}
+
+.background {
+    display: flex;
+    height: 700px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#logo,
+#poster {
+    padding-right: 15vw;
+    padding-left: 15vw;
+    justify-content: space-between;
+}
+
+#seness,
+#freeMenstrualProducts,
+#personas,
+#researchAndTesting {
+    justify-content: center;
+}

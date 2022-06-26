@@ -1,0 +1,246 @@
+html,
+body {
+    width: 100%;
+    max-height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    font-family: 'Rampart One', cursive;
+    overflow: hidden;
+    cursor: default;
+}
+
+img {
+    -webkit-user-drag: none;
+    border-radius: 20px;
+}
+
+#MainContent {
+    display: grid;
+    grid-template:
+        "a a c"
+        "d d d"
+        "e f g";
+    grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
+    grid-template-columns: calc(100vw / 3) calc(100vw / 3) calc(100vw / 3);
+    height: 100vh
+}
+
+#ClickMe {
+    grid-area: a;
+    grid-auto-flow: column;
+    align-self: center;
+    justify-self: center;
+}
+
+#nav-bar {
+    grid-area: c;
+    place-self: start end;
+    margin-right: 10%;
+}
+
+#UXD {
+    grid-area: d;
+    position: relative;
+}
+
+#UserBox {
+    grid-area: e;
+    place-self: start center;
+}
+
+#ExperienceBox {
+    grid-area: f;
+    place-self: center center;
+}
+
+#DesignBox {
+    grid-area: g;
+    place-self: start center;
+}
+
+#UserBox, #ExperienceBox, #DesignBox {
+    width: 300px;
+} 
+
+/* about me - image + text */
+
+#AboutMeBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 850px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px;
+
+    /* holographic background */
+    background-image: linear-gradient(to right,
+            #FFD84C,
+            #D891F9,
+            #A7FDFA);
+    background-size: 200%;
+}
+
+#content-about-me img{
+    float: left;
+    padding: 10px;
+}
+
+.text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    white-space: pre-line;
+}
+
+
+#Me {
+    width: 20%;
+}
+
+#nav-bar:hover {
+    cursor: pointer;
+}
+
+/* bottom-part */
+
+#arrowLeft,
+#arrowDown,
+#arrowRight {
+    height: 100px;
+    margin: auto;
+}
+
+#arrowLeft {
+    transform: scaleY(-1) rotate(90deg);
+}
+#arrowRight {
+    transform: scaleY(-1) rotate(-90deg);
+}
+
+#UXD svg {
+    height: 300px;
+}
+
+.subsites {
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+#AboutMe,
+#Contact,
+#User,
+#Experience,
+#Design {
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px;
+}
+
+#AboutMe:hover,
+#Contact:hover {
+    background-color: #FDF7CD;
+}
+
+#User {
+    background-color: #FFD84C;
+}
+
+#Experience {
+    background-color: #D891F9;
+}
+
+#Design {
+    background-color: #A9CDDD;
+
+}
+
+a {
+    display: flex;
+    text-align: start;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black; 
+}
+
+#UserBox a:hover {
+    cursor: pointer;
+    background-color: #FFD84C;
+}
+
+#ExperienceBox a:hover {
+    cursor: pointer;
+    background-color: #D891F9;
+}
+
+#DesignBox a:hover {
+    cursor: pointer;
+    background-color: #A9CDDD;
+}
+
+/* animation */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.box,
+.boxHover {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box svg {
+    animation: blink .3s;
+    animation-iteration-count: infinite;
+}
+
+#UXD2 svg {
+    animation-delay: .1s;
+}
+
+#UXD3 svg {
+    animation-delay: .2s;
+}
+
+.U:hover{
+ fill: #A9CDDD;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 0px 10px 10px;
+    font-family:'Mulish', sans-serif;
+    font-size: 12px;
+}
+
+#content-about-me {
+   background-color: chartreuse;
+}
+
+
+
