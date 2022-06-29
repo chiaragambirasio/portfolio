@@ -6,9 +6,51 @@ body {
     margin: 0%;
     font-size: 24px;
     background-color: #FFFFFF;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Titan One', cursive;
     overflow: hidden;
     cursor: default;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    display: flex;
+    text-align: start;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#ClickMe,
+#AboutMe,
+#Contact {
+    font-size: 36px;
+    color: #000;
+    background-image: linear-gradient(to right,
+            #FFD84C,
+            #D891F9,
+            #A7FDFA);
+}
+
+#Name {
+    font-size: 36px;
+    background-image: linear-gradient(to right,
+            #FFD84C,
+            #D891F9,
+            #A7FDFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ClickMe,
+#Name {
+    width: 400px;
 }
 
 img {
@@ -19,7 +61,7 @@ img {
 #MainContent {
     display: grid;
     grid-template:
-        "a a c"
+        "a b c"
         "d d d"
         "e f g";
     grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
@@ -31,7 +73,18 @@ img {
     grid-area: a;
     grid-auto-flow: column;
     align-self: center;
-    justify-self: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Name {
+    grid-area: b;
+    grid-auto-flow: column;
+    align-self: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #nav-bar {
@@ -60,18 +113,21 @@ img {
     place-self: start center;
 }
 
-#UserBox, #ExperienceBox, #DesignBox {
+#UserBox,
+#ExperienceBox,
+#DesignBox {
     width: 300px;
-} 
+}
 
 /* about me - image + text */
 
 #AboutMeBackground {
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50%;
+    height: 425px;
     width: 850px;
     z-index: 1;
     border-radius: 20px;
@@ -87,9 +143,44 @@ img {
     background-size: 200%;
 }
 
-#content-about-me img{
-    float: left;
+#content-about-me {
+    display: flex;
+    margin: auto; 
     padding: 10px;
+    flex-direction: column;
+}
+
+#content-about-me img {
+    float: left;
+    margin-right: 16px;
+   
+}
+
+#format {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#format p {
+    margin: 16px;
+}
+
+
+#i-am {
+    width: 800px;
+    font-size: 36px;
+    text-shadow: 2.5px 2.5px #FFFFFF;
+}
+
+#close {
+    align-self: flex-end;
+}
+
+.icon {
+    cursor: pointer;
+    height: 16px;
 }
 
 .text {
@@ -97,7 +188,6 @@ img {
     font-size: 16px;
     white-space: pre-line;
 }
-
 
 #Me {
     width: 20%;
@@ -119,6 +209,7 @@ img {
 #arrowLeft {
     transform: scaleY(-1) rotate(90deg);
 }
+
 #arrowRight {
     transform: scaleY(-1) rotate(-90deg);
 }
@@ -132,20 +223,18 @@ img {
     padding-bottom: 50px;
 }
 
+#ClickMe,
 #AboutMe,
 #Contact,
 #User,
 #Experience,
 #Design {
+    text-shadow: 2.5px 2.5px #FFFFFF;
     text-align: center;
     border: 1px solid;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 10px 10px;
-}
-
-#AboutMe:hover,
-#Contact:hover {
-    background-color: #FDF7CD;
 }
 
 #User {
@@ -158,33 +247,26 @@ img {
 
 #Design {
     background-color: #A9CDDD;
-
 }
 
-a {
-    display: flex;
-    text-align: start;
-    font-family: 'Mulish', sans-serif;
-    font-size: 20px;
-    line-height: 32px;
-    padding-left: 30px;
-    text-decoration: none;
-    color: black; 
+#AboutMe:hover,
+#Contact:hover {
+    background-image: none;
 }
 
 #UserBox a:hover {
     cursor: pointer;
-    background-color: #FFD84C;
+    text-shadow: 2.5px 2.5px #FFD84C;
 }
 
 #ExperienceBox a:hover {
     cursor: pointer;
-    background-color: #D891F9;
+    text-shadow: 2.5px 2.5px #D891F9;
 }
 
 #DesignBox a:hover {
     cursor: pointer;
-    background-color: #A9CDDD;
+    text-shadow: 2.5px 2.5px #A9CDDD;
 }
 
 /* animation */
@@ -225,22 +307,11 @@ a {
     animation-delay: .2s;
 }
 
-.U:hover{
- fill: #A9CDDD;
-}
-
 #footer {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 0px 0px 10px 10px;
-    font-family:'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 12px;
 }
-
-#content-about-me {
-   background-color: chartreuse;
-}
-
-
-

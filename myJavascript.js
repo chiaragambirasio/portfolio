@@ -14,51 +14,7 @@ const D3 = document.getElementById("D3");
 const AboutMe = document.getElementById("AboutMe");
 const Contact = document.getElementById("Contact");
 const AboutMeBackground = document.getElementById("AboutMeBackground");
-
-// Hover U
-U3.onmouseover = function () {
-
-  document.getElementById("U1").style.fill = "#FFD84C";
-  document.getElementById("U2").style.fill = "#FFD84C";
-  U3.style.fill = "#FFD84C";
-
-}
-
-U3.onmouseleave = function () {
-  document.getElementById("U1").style.fill = "#000";
-  document.getElementById("U2").style.fill = "#000";
-  U3.style.fill = "#000";
-}
-
-// Hover X
-X3.onmouseover = function () {
-
-  document.getElementById("X1").style.fill = "#D891F9";
-  document.getElementById("X2").style.fill = "#D891F9";
-  X3.style.fill = "#D891F9";
-}
-
-X3.onmouseleave = function () {
-
-  document.getElementById("X1").style.fill = "#000";
-  document.getElementById("X2").style.fill = "#000";
-  X3.style.fill = "#000";
-}
-
-// Hover D
-D3.onmouseover = function () {
-
-  document.getElementById("D1").style.fill = "#A9CDDD";
-  document.getElementById("D2").style.fill = "#A9CDDD";
-  D3.style.fill = "#A9CDDD";
-}
-
-D3.onmouseleave = function () {
-
-  document.getElementById("D1").style.fill = "#000";
-  document.getElementById("D2").style.fill = "#000";
-  D3.style.fill = "#000";
-}
+const closeButton = document.getElementById("close");
 
 // Visibilty
 user.style.display = "none";
@@ -68,6 +24,77 @@ arrowDown.style.display = "none";
 design.style.display = "none";
 arrowRight.style.display = "none";
 AboutMeBackground.style.display = "none";
+
+// About Me Card
+
+AboutMe.onmousedown = function () {
+  AboutMeBackground.style.display = "flex";
+  user.style.display = "none";
+  experience.style.display = "none";
+  design.style.display = "none";
+}
+
+closeButton.onmousedown = function (){
+  AboutMeBackground.style.display = "none";
+}
+
+// Hover U
+
+U3.onmouseover = function () {
+
+  document.getElementById("U1").style.fill = "#FFD84C";
+  document.getElementById("U2").style.fill = "#FFD84C";
+  U3.style.fill = "#FFD84C";
+  document.body.style.cursor = "pointer";
+
+}
+
+U3.onmouseleave = function () {
+
+  document.getElementById("U1").style.fill = "#000";
+  document.getElementById("U2").style.fill = "#000";
+  U3.style.fill = "#000";
+  document.body.style.cursor = "default";
+
+}
+
+// Hover X
+X3.onmouseover = function () {
+
+  document.getElementById("X1").style.fill = "#D891F9";
+  document.getElementById("X2").style.fill = "#D891F9";
+  X3.style.fill = "#D891F9";
+  document.body.style.cursor = "pointer";
+
+}
+
+X3.onmouseleave = function () {
+
+  document.getElementById("X1").style.fill = "#000";
+  document.getElementById("X2").style.fill = "#000";
+  X3.style.fill = "#000";
+  document.body.style.cursor = "default";
+
+}
+
+// Hover D
+D3.onmouseover = function () {
+
+  document.getElementById("D1").style.fill = "#A9CDDD";
+  document.getElementById("D2").style.fill = "#A9CDDD";
+  D3.style.fill = "#A9CDDD";
+  document.body.style.cursor = "pointer";
+
+}
+
+D3.onmouseleave = function () {
+
+  document.getElementById("D1").style.fill = "#000";
+  document.getElementById("D2").style.fill = "#000";
+  D3.style.fill = "#000";
+  document.body.style.cursor = "default";
+
+}
 
 U3.onmousedown = function () {
   // show relevant boxes
@@ -102,13 +129,7 @@ D3.onmousedown = function () {
   arrowDown.style.display = "none";
 }
 
-AboutMe.onmousedown = function () {
-  // Schließicon fehlt
-  if (AboutMeBackground.style.display == "none")
-    AboutMeBackground.style.display = "block";
-  else
-    AboutMeBackground.style.display = "none";
-}
+
 
 // holographic backgorund movement
 
@@ -133,9 +154,5 @@ function handleDeviceOrientation(event) {
 window.addEventListener("deviceorientation", handleDeviceOrientation, true);
 
 
-var video = document.getElementById("myVideo");
-video.controls = false;
+// circle thing
 
-video.onmousedown = function ShowControls() {
-  video.controls = true;
-}

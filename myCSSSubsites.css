@@ -4,8 +4,8 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: thistle;
     z-index: 1;
+    background-color: white;
 }
 
 html,
@@ -54,6 +54,8 @@ a {
 
 .icon {
     margin-left: 25px;
+    height: 16px;
+    
 }
 
 .User:hover {
