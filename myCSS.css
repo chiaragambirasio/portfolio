@@ -146,7 +146,7 @@ img {
 #content-about-me {
     display: flex;
     margin: auto; 
-    padding: 10px;
+    padding: 16px;
     flex-direction: column;
 }
 
@@ -157,9 +157,10 @@ img {
 }
 
 #format {
-    margin-top: 77px;
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
+    
 }
 
 
