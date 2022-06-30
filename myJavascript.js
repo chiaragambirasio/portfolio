@@ -15,6 +15,7 @@ const AboutMe = document.getElementById("AboutMe");
 const Contact = document.getElementById("Contact");
 const AboutMeBackground = document.getElementById("AboutMeBackground");
 const closeButton = document.getElementById("close");
+const closeButton2 = document.getElementById("close2");
 
 // Visibilty
 user.style.display = "none";
@@ -24,11 +25,13 @@ arrowDown.style.display = "none";
 design.style.display = "none";
 arrowRight.style.display = "none";
 AboutMeBackground.style.display = "none";
+ContactBackground.style.display = "none";
 
 // About Me Card
 
 AboutMe.onmousedown = function () {
   AboutMeBackground.style.display = "flex";
+  ContactBackground.style.display = "none";
   user.style.display = "none";
   experience.style.display = "none";
   design.style.display = "none";
@@ -37,6 +40,20 @@ AboutMe.onmousedown = function () {
 closeButton.onmousedown = function (){
   AboutMeBackground.style.display = "none";
 }
+
+Contact.onmousedown = function () {
+  AboutMeBackground.style.display = "none";
+  ContactBackground.style.display = "flex";
+  user.style.display = "none";
+  experience.style.display = "none";
+  design.style.display = "none";
+}
+
+closeButton2.onmousedown = function (){
+  ContactBackground.style.display = "none";
+}
+
+
 
 // Hover U
 
@@ -136,6 +153,7 @@ D3.onmousedown = function () {
 function updateHolographicBackground(value) {
   const percentage = value * 100;
   AboutMeBackground.style.backgroundPosition = percentage + "%";
+  ContactBackground.style.backgroundPosition = percentage + "%";
 }
 
 function handleMouseMove(event) {
@@ -156,3 +174,6 @@ window.addEventListener("deviceorientation", handleDeviceOrientation, true);
 
 // circle thing
 
+// creates a span wrapping each letter of text
+// Appends spans to target element
+// Adds rotate transform to each letter

@@ -30,14 +30,35 @@ img {
     margin-bottom: auto;
 }
 
+svg {
+    height: 100px;
+}
+
 #logoAlt,
 #logoNeu {
-    max-height: 250px;
+    max-height: 150px;
+    max-width: 300px;
     box-shadow: none;
 }
 
-video {
+#logoNeu,
+#arrow {
+    margin-left: 50px;
+}
+
+
+#transition {
+    display: flex;
+    align-items: center;
+    padding: 0 15vw 0 15vw;
+    
+}
+
+video, 
+#personas img,
+#researchAndTesting img{
     max-height: 500px;
+    max-width: none;
     -webkit-user-drag: none;
     box-shadow: 5.85px 5.46px 23px 2px rgba(0, 0, 0, 0.5);
     margin-top: auto;
@@ -52,10 +73,8 @@ a {
     color: black;
 }
 
-.icon {
+.icon{
     margin-left: 25px;
-    height: 16px;
-    
 }
 
 .User:hover {
@@ -152,3 +171,11 @@ li {
 #researchAndTesting {
     justify-content: center;
 }
+
+#UXVideo {
+    max-height: 500px;
+    -webkit-user-drag: none;
+    box-shadow: none;
+    padding: 0 15vw 0 15vw;
+}
+
