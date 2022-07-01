@@ -7,7 +7,6 @@ body {
     font-size: 24px;
     background-color: #FFFFFF;
     font-family: 'Titan One', cursive;
-    overflow: hidden;
     cursor: default;
 }
 
@@ -376,6 +375,11 @@ img {
         background-color:aliceblue;
         display: flex;
         flex-direction: column;
+    }
+
+    #Name {
+        font-size: 22pt;
+
     }
 
     #UXD,#ClickMe  {

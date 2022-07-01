@@ -250,5 +250,15 @@ li {
         max-width: 70vw;
     }
 
+    .fa {
+        transform: scale(2);
+    }
+
+    .overviewTimeTools {
+        flex-direction: column-reverse;
+    }
+
+
+
 }
 
