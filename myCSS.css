@@ -87,7 +87,7 @@ img {
 #ClickMe {
     grid-area: a;
     grid-auto-flow: column;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -96,7 +96,7 @@ img {
 #Name {
     grid-area: b;
     grid-auto-flow: column;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -353,7 +353,7 @@ img {
             #FFD84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
-    animation: textclip 2s linear infinite;
+    animation: textclip 5s linear infinite;
 }
 
 @keyframes textclip {
@@ -361,3 +361,134 @@ img {
         background-position: 200% center;
     }
 }
+
+.small {
+    display: none;
+}
+
+/* Responsive Web Design - Media Queries */
+
+
+@media only screen and (max-width: 600px) {
+    
+    #MainContent{
+        max-width: 100%;
+        background-color:aliceblue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #UXD,#ClickMe  {
+        display: none;
+    }
+
+    #nav-bar{
+        display: flex;
+        align-self: center;
+        margin-right: 0px;
+    }
+
+    #Contact {
+        margin-left: 50px;
+    }
+
+    #AboutMeBackground,
+    #ContactBackground{
+        width: auto;
+        width: 350px;
+        height: 700px;
+    }
+
+    #format, #format p {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text, #get-in-touch {
+        width: 300px;
+    }
+
+    #AboutMe,
+    #Contact,
+    #i-am 
+    {
+        font-size: 24px;
+    } 
+
+    .small {
+        display: block;
+    }
+
+    #User,
+    #Experience,
+    #Design {
+        box-shadow: none;
+        text-shadow: none;
+        font-family: 'Mulish', sans-serif;
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    #UserBox, 
+    #DesignBox {
+        place-self: center center;
+    }
+
+    #UserBox a,
+    #ExperienceBox a,
+    #DesignBox a{
+        text-shadow: 2.5px 2.5px #FFFFFF;
+        text-align: center;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 10px 10px;
+        padding-left: 30px;
+        margin-top: 15px;
+    }
+
+    #UserBox a:hover ,
+    #ExperienceBox a:hover,
+    #DesignBox a:hover {
+        text-shadow: 2.5px 2.5px #FFFFFF;
+    }
+
+    #User,
+    #Experience,
+    #Design {
+        background-color:aliceblue;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subsites {
+        padding-bottom: 25px;
+    }
+
+    .yellow{
+        background-color: #FFD84C;
+    }
+
+    .pink {
+        background-color:#D891F9;
+    }
+
+    .blue {
+        background-color:#A9CDDD;
+    }
+
+}
+
+
+    

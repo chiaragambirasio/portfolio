@@ -9,12 +9,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Titan+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
 	<div id="AboutMeBackground" onmousemove="handleMouseMove(event)">
 		<div id="content-about-me">
-			<div id="top">
+			<div class="top">
 				<img id="Me" src="images/Profilbild.png">
 				<div id="format">
 					<p class="text">Hello my name is</p>
@@ -23,7 +24,7 @@
 					</p>
 				</div>
 			</div>
-			<div id="bottom">
+			<div class="bottom">
 				<p class="text">Since October 2020 I pursue my passion at Technische Hochschule Ingolstadt.
 					Besides my studies, I'm working at miniVERSUM Akademie in Munich. There I'm teaching children
 					programming and robotics. Aditionally I love to volunteer. I'm a member of the student council and a
@@ -37,11 +38,11 @@
 	</div>
 	<div id="ContactBackground" onmousemove="handleMouseMove(event)">
 		<div id="get-in-touch">
-			<div id="top">
+			<div class="top">
 				<p id="i-am">LET'S GET IN TOUCH.</p>
 			</div>
 
-			<div id="bottom">
+			<div class="bottom">
 				<a id="linkedin" href="https://www.linkedin.com/in/chiara-gambirasio-629754242" target="_blank"
 					class="fa Experience icon link fa-3x">&#xf08c;</a>
 				<a id="mail" href="mailto:chg5206@thi.de" class="fa Experience icon link fa-3x">&#xf0e0;</a>
@@ -1840,6 +1841,7 @@
 				</svg>
 			</div>
 		</div>
+		
 		<div class="subsites" id="UserBox">
 			<img id="arrowLeft" src="019_Fonts/arrow_left.svg" alt="arrowLeft">
 			<p id="User">
@@ -1861,8 +1863,33 @@
 			<p id="Design">
 				Design
 			</p>
-			<a href="design.html#logo-wrapper">Logo &#10145;</a>
-			<a href="design.html#poster-wrapper">Poster &#10145;</a>
+			<a class="work" href="design.html#logo-wrapper">Logo &#10145;</a>
+			<a class="work"href="design.html#poster-wrapper">Poster &#10145;</a>
+		</div>
+
+		<!-- for small screen-->
+		<div class="subsites small" id="UserBox">
+		<p id="User">
+			User
+		</p>
+		<a class="yellow" href="user.html#personas-wrapper">Personas &#10145;</a>
+		<a class="yellow" href="user.html#researchAndTesting-wrapper">Research & Testing &#10145;</a>
+		</div>
+
+		<div class="subsites small" id="ExperienceBox">
+			<p id="Experience">
+				Experience
+			</p>
+			<a class="pink" href="experience.html#seness-wrapper">Seness &#10145;</a>
+			<a class="pink" href="experience.html#freeMenstrualProducts-wrapper">Free Menstrual Products &#10145;</a>
+		</div>
+
+		<div class="subsites small" id="DesignBox">
+			<p id="Design">
+				Design
+			</p>
+			<a class="blue" href="design.html#logo-wrapper">Logo &#10145;</a>
+			<a class="blue" href="design.html#poster-wrapper">Poster &#10145;</a>
 		</div>
 
 		<div id="footer"> Design and Implementation @ChiaraGambirasio</div>
@@ -1873,3 +1900,4 @@
 
 
 </html>
+

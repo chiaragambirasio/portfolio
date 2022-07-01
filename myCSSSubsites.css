@@ -1,8 +1,10 @@
 header {
     display: flex;
+    box-sizing: border-box;
+    width: 100%;
     padding: 50px 15vw 15px 15vw;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     background-color: white;
@@ -10,7 +12,6 @@ header {
 
 html,
 body {
-    width: 100vw;
     margin: auto;
     font-size: 24px;
 }
@@ -39,25 +40,27 @@ svg {
     max-height: 150px;
     max-width: 300px;
     box-shadow: none;
+    margin: auto;
 }
 
 #logoNeu,
 #arrow {
     margin-left: 50px;
+    margin: auto;
 }
 
 
 #transition {
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 video, 
 #personas img,
 #researchAndTesting img{
     max-height: 500px;
-    max-width: none;
+    max-width: 90vw;
     -webkit-user-drag: none;
     box-shadow: 5.85px 5.46px 23px 2px rgba(0, 0, 0, 0.5);
     margin-top: auto;
@@ -179,6 +182,14 @@ li {
     padding-right: 15vw;
     padding-left: 15vw;
     justify-content: space-between;
+    
+}
+
+#poster{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 25px;
 }
 
 #seness,
@@ -221,5 +232,23 @@ li {
     padding: 50px 0px 10px 10px;
     font-family: 'Mulish', sans-serif;
     font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #arrow {
+        transform: rotate(90deg);
+        padding: 50px;
+    }
+
+    #logo,
+    #poster {
+        flex-wrap: wrap;
+    }
+
+    #logo img{
+        max-width: 70vw;
+    }
+
 }
 
