@@ -50,8 +50,7 @@ svg {
 #transition {
     display: flex;
     align-items: center;
-    padding: 0 15vw 0 15vw;
-    
+
 }
 
 video, 
@@ -72,6 +71,20 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #FFD84C;
+}
+
+#persona:hover{
+    color: #E4AAFF;
+}
+
 
 .icon{
     margin-left: 25px;
@@ -94,17 +107,20 @@ a {
 }
 
 .text {
-    padding: 0 15vw 0 15vw;
+    line-height: 2;
+    padding: 0 30vw 0 15vw;
     white-space: pre-line;
 }
 
 .overview {
-    padding-right: 40vw;
+    line-height: 2;
+    padding-left: 15vw;
     white-space: pre-line;
 }
 
 .step {
     font-weight: 800;
+    line-height: 2;
     white-space: pre-line;
 }
 
@@ -172,10 +188,38 @@ li {
     justify-content: center;
 }
 
+.imgInText img {
+    max-height: 300px;
+    -webkit-user-drag: none;
+    box-shadow: none;
+}
+
 #UXVideo {
     max-height: 500px;
     -webkit-user-drag: none;
     box-shadow: none;
     padding: 0 15vw 0 15vw;
+}
+
+.overviewTimeTools {
+    display: flex;
+}
+
+.tools img{
+    height: 50px;
+    box-shadow: none;
+}
+
+.left,
+.right {
+    flex:1;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    padding: 50px 0px 10px 10px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
 }
 
