@@ -117,7 +117,7 @@ img {
 
 #UserBox {
     grid-area: e;
-    place-self: start center;
+    place-self: center center;
 }
 
 #ExperienceBox {
@@ -127,7 +127,7 @@ img {
 
 #DesignBox {
     grid-area: g;
-    place-self: start center;
+    place-self: center center;
 }
 
 #UserBox,
@@ -247,15 +247,12 @@ img {
 
 .subsites {
     font-size: 16px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
-#ClickMe,
+
 #AboutMe,
-#Contact,
-#User,
-#Experience,
-#Design {
+#Contact {
     text-shadow: 2.5px 2.5px #FFFFFF;
     text-align: center;
     border: 1px solid;
@@ -264,16 +261,32 @@ img {
     box-shadow: 10px 10px;
 }
 
+#ClickMe,
+#User,
+#Experience,
+#Design {
+    text-shadow: 2.5px 2.5px #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 #User {
     background-color: #FFD84C;
+    padding: 0px;
+    margin: 0px;
 }
 
 #Experience {
     background-color: #D891F9;
+    padding: 0px;
+    margin: 0px;
 }
 
 #Design {
     background-color: #A9CDDD;
+    padding: 0px;
+    margin: 0px;
 }
 
 #AboutMe:hover,
@@ -281,19 +294,49 @@ img {
     background-image: none;
 }
 
-#UserBox a:hover {
-    cursor: pointer;
-    text-shadow: 2.5px 2.5px #FFD84C;
+#User,
+#Experience,
+#Design {
+    box-shadow: none;
+    text-shadow: none;
+    font-family: 'Titan One', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    line-height: 32px;
+    text-decoration: none;
+    color: black;
+    background-color: #FFFFFF;
 }
 
-#ExperienceBox a:hover {
-    cursor: pointer;
-    text-shadow: 2.5px 2.5px #D891F9;
+#UserBox a,
+#ExperienceBox a,
+#DesignBox a {
+    text-shadow: 2.5px 2.5px #FFFFFF;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    padding-left: 30px;
+    margin-top: 15px;
 }
 
+.yellow {
+    background-color: #FFD84C;
+}
+
+.pink {
+    background-color: #D891F9;
+}
+
+.blue {
+    background-color: #A9CDDD;
+}
+
+#UserBox a:hover,
+#ExperienceBox a:hover,
 #DesignBox a:hover {
     cursor: pointer;
-    text-shadow: 2.5px 2.5px #A9CDDD;
+    background-color: #FFFFFF;
 }
 
 /* animation */
@@ -373,14 +416,14 @@ img {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-color:aliceblue;
+        background-color: aliceblue;
         padding-bottom: 25px;
     }
-    
-    #MainContent{
+
+    #MainContent {
         max-width: 100%;
         height: 100%;
-        
+
         display: flex;
         flex-direction: column;
     }
@@ -390,11 +433,12 @@ img {
 
     }
 
-    #UXD,#ClickMe  {
+    #UXD,
+    #ClickMe {
         display: none;
     }
 
-    #nav-bar{
+    #nav-bar {
         max-width: 90vw;
         display: flex;
         align-self: center;
@@ -405,7 +449,7 @@ img {
         margin-left: 50px;
     }
 
-    #AboutMeBackground{
+    #AboutMeBackground {
         width: 80vw;
         height: 800px;
     }
@@ -414,7 +458,7 @@ img {
         margin: 0;
     }
 
-    #ContactBackground{
+    #ContactBackground {
         width: 80vw;
         height: 400px;
     }
@@ -424,7 +468,8 @@ img {
         width: 70vw;
     }
 
-    #format, #format p {
+    #format,
+    #format p {
         margin-top: 15px;
         margin-left: 0px;
     }
@@ -436,10 +481,9 @@ img {
 
     #AboutMe,
     #Contact,
-    #i-am 
-    {
+    #i-am {
         font-size: 24px;
-    } 
+    }
 
     .small {
         display: block;
@@ -460,25 +504,12 @@ img {
         font-weight: 600;
     }
 
-    #UserBox, 
+    #UserBox,
     #DesignBox {
         place-self: center center;
     }
 
-    #UserBox a,
-    #ExperienceBox a,
-    #DesignBox a{
-        text-shadow: 2.5px 2.5px #FFFFFF;
-        text-align: center;
-        border: 1px solid;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 10px 10px;
-        padding-left: 30px;
-        margin-top: 15px;
-    }
-
-    #UserBox a:hover ,
+    #UserBox a:hover,
     #ExperienceBox a:hover,
     #DesignBox a:hover {
         text-shadow: 2.5px 2.5px #FFFFFF;
@@ -487,26 +518,12 @@ img {
     #User,
     #Experience,
     #Design {
-        background-color:aliceblue;
+        background-color: aliceblue;
         border: none;
-        margin: 0;
-        padding: 0;
     }
 
     .subsites {
         padding-bottom: 25px;
-    }
-
-    .yellow{
-        background-color: #FFD84C;
-    }
-
-    .pink {
-        background-color:#D891F9;
-    }
-
-    .blue {
-        background-color:#A9CDDD;
     }
 
     #footer {
@@ -514,6 +531,3 @@ img {
     }
 
 }
-
-
-    
