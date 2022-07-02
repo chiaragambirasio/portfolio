@@ -182,7 +182,6 @@ li {
     padding-right: 15vw;
     padding-left: 15vw;
     justify-content: space-between;
-    
 }
 
 #poster{
@@ -199,10 +198,15 @@ li {
     justify-content: center;
 }
 
+.imgInText {
+    padding-right: 15vw;
+}
+
 .imgInText img {
     max-height: 300px;
     -webkit-user-drag: none;
     box-shadow: none;
+    padding-left: 25px; 
 }
 
 #UXVideo {
@@ -234,31 +238,33 @@ li {
     font-size: 12px;
 }
 
-@media only screen and (max-width: 600px) {
+@media (hover:none){
+    .fa {
+        transform: scale(2);
+    }
+    .icon {
+        margin-left: 66px;
+    }
+
+    .overviewTimeTools,
+    #transition  {
+        flex-direction: column-reverse;
+    }
+
+    #logo,
+    #poster {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     #arrow {
         transform: rotate(90deg);
         padding: 50px;
     }
 
-    #logo,
-    #poster {
-        flex-wrap: wrap;
-    }
-
     #logo img{
+        max-height: 250px;
         max-width: 70vw;
     }
-
-    .fa {
-        transform: scale(2);
-    }
-
-    .overviewTimeTools {
-        flex-direction: column-reverse;
-    }
-
-
-
 }
 
