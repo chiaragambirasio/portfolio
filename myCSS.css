@@ -434,10 +434,6 @@ img {
         flex-direction: column;
     }
 
-    .text, #get-in-touch {
-        width: 300px;
-    }
-
     #AboutMe,
     #Contact,
     #i-am 
