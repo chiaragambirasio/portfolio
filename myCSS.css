@@ -231,6 +231,7 @@ img {
 #arrowRight {
     height: 100px;
     margin: auto;
+    margin-top: -50px;
 }
 
 #arrowLeft {
@@ -305,7 +306,7 @@ img {
     line-height: 32px;
     text-decoration: none;
     color: black;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 #UserBox a,

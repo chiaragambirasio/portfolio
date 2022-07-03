@@ -187,18 +187,20 @@ li {
 #poster {
     padding-right: 15vw;
     padding-left: 15vw;
-    justify-content: space-between;
+    
 }
 
-#logo img {
-    max-height:300px;
+#logo img{
+    max-height: 300px;
 }
 
-#poster{
+#poster,
+#logo {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 25px;
+    justify-content: space-between;
 }
 
 #seness,
