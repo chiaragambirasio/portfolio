@@ -171,6 +171,7 @@ p {
 }
 
 .container {
+    height: 750px;
     padding-top: 92px;
 }
 
@@ -196,9 +197,6 @@ li {
 
 #poster,
 #logo {
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     gap: 25px;
     justify-content: space-between;
 }
@@ -269,6 +267,13 @@ li {
         justify-content: center;
     }
 
+
+
+    #poster-wrapper,
+    #poster {
+        height: 1800px;
+    }
+
     #arrow {
         transform: rotate(90deg);
         padding: 50px;
@@ -286,6 +291,10 @@ li {
     .text,
     .overviewTimeTools {
         padding-right: 15vw;
+    }
+
+    #footer {
+        display: none;
     }
 }
 
