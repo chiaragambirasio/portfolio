@@ -452,7 +452,8 @@ img {
 
     #AboutMeBackground {
         width: 80vw;
-        height: 800px;
+        height: 750px;
+        margin-top: 50px;
     }
 
     #content-about-me {
@@ -467,6 +468,10 @@ img {
     .top,
     .bottom {
         width: 70vw;
+    }
+
+    #Me {
+        width: 150px;
     }
 
     #format,
