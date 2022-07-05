@@ -6,6 +6,7 @@
 
 html,
 body {
+    height: 100vh;
     width: 100vw;
     position: relative;
     margin: 0%;
@@ -534,6 +535,7 @@ img {
 
     #footer {
         display: flex;
+
     }
 
 }
