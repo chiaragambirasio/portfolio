@@ -12,6 +12,7 @@ body {
     margin: 0%;
     font-size: 24px;
     font-family: 'Titan One', cursive;
+    background-color: aliceblue;
     cursor: default;
 }
 
@@ -418,7 +419,6 @@ img {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-color: aliceblue;
         padding-bottom: 25px;
     }
 
