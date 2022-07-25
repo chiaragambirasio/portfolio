@@ -64,6 +64,15 @@ U3.onmouseover = function () {
   U3.style.fill = "#FFD84C";
   document.body.style.cursor = "pointer";
 
+  // show relevant boxes
+  user.style.display = "block";
+  arrowLeft.style.display = "block";
+  // hide other boxes
+  experience.style.display = "none";
+  arrowDown.style.display = "none";
+  design.style.display = "none";
+  arrowRight.style.display = "none";
+
 }
 
 U3.onmouseleave = function () {
@@ -83,6 +92,14 @@ X3.onmouseover = function () {
   X3.style.fill = "#D891F9";
   document.body.style.cursor = "pointer";
 
+  // show relevant boxes
+  experience.style.display = "block";
+  arrowDown.style.display = "block";
+  // hide other boxes
+  user.style.display = "none";
+  arrowLeft.style.display = "none";
+  design.style.display = "none";
+  arrowRight.style.display = "none";
 }
 
 X3.onmouseleave = function () {
@@ -102,6 +119,15 @@ D3.onmouseover = function () {
   D3.style.fill = "#A9CDDD";
   document.body.style.cursor = "pointer";
 
+  // show relevant boxes
+  design.style.display = "block";
+  arrowRight.style.display = "block";
+  // hide other boxes
+  user.style.display = "none";
+  arrowLeft.style.display = "none";
+  experience.style.display = "none";
+  arrowDown.style.display = "none";
+
 }
 
 D3.onmouseleave = function () {
@@ -112,41 +138,6 @@ D3.onmouseleave = function () {
   document.body.style.cursor = "default";
 
 }
-
-U3.onmousedown = function () {
-  // show relevant boxes
-  user.style.display = "block";
-  arrowLeft.style.display = "block";
-  // hide other boxes
-  experience.style.display = "none";
-  arrowDown.style.display = "none";
-  design.style.display = "none";
-  arrowRight.style.display = "none";
-}
-
-X3.onmousedown = function () {
-  // show relevant boxes
-  experience.style.display = "block";
-  arrowDown.style.display = "block";
-  // hide other boxes
-  user.style.display = "none";
-  arrowLeft.style.display = "none";
-  design.style.display = "none";
-  arrowRight.style.display = "none";
-}
-
-D3.onmousedown = function () {
-  // show relevant boxes
-  design.style.display = "block";
-  arrowRight.style.display = "block";
-  // hide other boxes
-  user.style.display = "none";
-  arrowLeft.style.display = "none";
-  experience.style.display = "none";
-  arrowDown.style.display = "none";
-}
-
-
 
 // holographic backgorund movement
 
