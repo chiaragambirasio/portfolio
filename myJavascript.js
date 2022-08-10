@@ -93,13 +93,7 @@ function DesignAction(event) {
   }
 }
 
-var isBackground = true;
-
-if (sidebarbg.style.width == "100vw") {
-  
-} else {
-  isBackground = false;
-}
+var isBackground = false;
 
 // About Me Card
 
@@ -110,6 +104,7 @@ AboutMe.onmouseover = function () {
 AboutMe.onmouseout = function () {
   if(isBackground == true){
   AboutMe.style.fontWeight = "bold";
+  isBackground = false;
   } else {
   AboutMe.style.fontWeight = "normal";
   }
@@ -140,6 +135,7 @@ Contact.onmouseover = function () {
 Contact.onmouseout = function () {
   if(isBackground == true){
     Contact.style.fontWeight = "bold";
+    isBackground = false;
     } else {
     Contact.style.fontWeight = "normal";
     }

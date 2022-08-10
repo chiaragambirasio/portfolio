@@ -98,6 +98,7 @@ img {
     padding: 42px;
     box-shadow: 10px 10px;
     background: #F9F4F4;
+    transition: 2s ease-in-out;
 }
 
 #content-about-me {
@@ -503,11 +504,6 @@ img {
     #Contact {
         writing-mode: horizontal-tb
     }
-
-    /* #AboutMe:hover,
-    #Contact:hover {
-        font-weight: bold !important;
-    } */
 
     .learn-more .circle,
     .learn-more {
