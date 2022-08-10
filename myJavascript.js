@@ -95,6 +95,12 @@ function DesignAction(event) {
 
 var isBackground = true;
 
+if (sidebarbg.style.width == "100vw") {
+  
+} else {
+  isBackground = false;
+}
+
 // About Me Card
 
 AboutMe.onmouseover = function () {
@@ -102,7 +108,9 @@ AboutMe.onmouseover = function () {
 }
 
 AboutMe.onmouseout = function () {
-  if(isBackground == "false"){
+  if(isBackground == true){
+  AboutMe.style.fontWeight = "bold";
+  } else {
   AboutMe.style.fontWeight = "normal";
   }
 }
@@ -113,12 +121,14 @@ AboutMe.onmousedown = function () {
   ContactBackground.style.display = "none";
   Contact.style.fontWeight = "normal";
   sidebarbg.style.width = "100vw";
+  isBackground = true;
 }
 
 closeButton.onmousedown = function () {
   AboutMeBackground.style.display = "none";
   AboutMe.style.fontWeight = "normal";
   sidebarbg.style.width = "68px";
+  isBackground = false;
 }
 
 // Contact Card
@@ -128,8 +138,9 @@ Contact.onmouseover = function () {
 }
 
 Contact.onmouseout = function () {
-  
-  if(isBackground == "false"){
+  if(isBackground == true){
+    Contact.style.fontWeight = "bold";
+    } else {
     Contact.style.fontWeight = "normal";
     }
 }
@@ -140,16 +151,12 @@ Contact.onmousedown = function () {
   ContactBackground.style.display = "flex";
   Contact.style.fontWeight = "bold";
   sidebarbg.style.width = "100vw";
+  isBackground = true;
 }
 
 closeButton2.onmousedown = function () {
   ContactBackground.style.display = "none";
   Contact.style.fontWeight = "normal";
   sidebarbg.style.width = "68px";
-}
-
-if (sidebarbg.style.width == "100vw") {
-  isBackground = true;
-} else {
   isBackground = false;
 }
