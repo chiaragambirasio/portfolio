@@ -7,26 +7,32 @@
 	<link rel="stylesheet" href="myCSS.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Titan+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Syncopate&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
+	<div id="sidebarbg"></div>
+	<div id="sidebar">
+		<p class="rotate" id="AboutMe">About me</p>
+		<p class="rotate" id="Contact">Contact</p>
+	</div>
 	<div id="AboutMeBackground" onmousemove="handleMouseMove(event)">
 		<div id="content-about-me">
 			<div class="top">
-				<img id="Me" src="images/Profilbild.png">
+				
 				<div id="format">
-					<p class="text">Hello my name is</p>
-					<p id="i-am">CHIARA GAMBIRASIO &<br>
-						I'M A UX DESIGN STUDENT
-					</p>
+					<p id="hello">HELLO MY NAME IS</p>
+					<p id="i-am">CHIARA GAMBIRASIO<br>& I'M A UX DESIGN STUDENT</p>
 				</div>
 			</div>
-			<div class="bottom">
+			<div class="bottom">	
+       			<img id="Me" src="images/Profilbild.png">		
 				<p class="text">Since October 2020 I pursue my passion at Technische Hochschule Ingolstadt.
-					Besides my studies, I'm working at miniVERSUM Akademie in Munich. There I'm teaching children programming and robotics. Aditionally I love to volunteer. I'm a member of the student council and a few associations. Mainly I designed posters for upcoming events for N.I.C.E. (Network & International Culture Exchange) organization. Wanna see some? Just <a class="link" href="design.html#poster-wrapper">click here</a>.
+					Besides my studies, I'm working at miniVERSUM Akademie in Munich. There I'm teaching children programming and robotics. 
+					Aditionally I love to volunteer. I'm a member of the student council and a few associations. Mainly I designed posters for upcoming events for N.I.C.E. (Network & International Culture Exchange) organization. Wanna see some? Just <a class="link"
+						href="design.html#poster-wrapper">click here</a>.
 				</p>
 			</div>
 		</div>
@@ -39,23 +45,21 @@
 			</div>
 
 			<div class="bottom">
-				<a id="linkedin" href="https://www.linkedin.com/in/chiara-gambirasio-629754242" target="_blank"
-					class="fa Experience icon link fa-3x">&#xf08c;</a>
-				<a id="mail" href="mailto:chg5206@thi.de" class="fa Experience icon link fa-3x">&#xf0e0;</a>
+					<ul class="icon-list">
+						<li class="icon-item">
+							<a id="linkedin" href="https://www.linkedin.com/in/chiara-gambirasio-629754242" target="_blank"
+							class="icon-link fa fa-3x">&#xf08c;</a>
+						</li>
+						<li class="icon-item">
+							<a id="mail" href="mailto:chg5206@thi.de" class="icon-link fa fa-3x">&#xf0e0;</a>
+						</li>
+					</ul>			
 			</div>
 		</div>
 		<div class="fa icon" id="close2">&#xf00d;</div>
 	</div>
 
 	<div id="MainContent">
-		<p id="ClickMe">Hover over the letters to explore my work!</p>
-		<div class="container" id="Name">
-			<h2 class="animate-character"><span>Chiara<br>Gambirasio</span></h2>
-		</div>
-		<div id="nav-bar">
-			<p id="AboutMe">About me</p>
-			<p id="Contact">Contact</p>
-		</div>
 		<div id="UXD">
 			<div class="box" id="UXD1">
 				<svg id="U1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
@@ -1835,57 +1839,81 @@
 				</svg>
 			</div>
 		</div>
-		
+
 		<div class="subsites" id="UserBox">
-			<img id="arrowLeft" src="019_Fonts/arrow_left.svg" alt="arrowLeft">
-			<p id="User">
+			<!-- <img id="arrowLeft" src="019_Fonts/arrow_left.svg" alt="arrowLeft"> -->
+			<!-- <p id="User">
 				User
-			</p>
-			<a class="yellow" href="user.html#personas-wrapper">Personas &#10145;</a>
-			<a class="yellow" href="user.html#researchAndTesting-wrapper">Research & Testing &#10145;</a>
+			</p> -->
+			<div class="container">
+				<a id="personas" class="learn-more" href="user.html#personas-wrapper">
+					<span class="circle yellow" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">Personas</span>
+				</a>
+			</div>
+			<div class="container">
+				<a id="researchAndTesting" class="learn-more" href="user.html#researchAndTesting-wrapper">
+					<span class="circle yellow" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">Research & Testing </span>
+				</a>
+			</div>
+			<!-- <a class="yellow" href="user.html#personas-wrapper">Personas &#10145;</a>
+			<a class="yellow" href="user.html#researchAndTesting-wrapper">Research & Testing &#10145;</a> -->
 		</div>
 		<div class="subsites" id="ExperienceBox">
-			<img id="arrowDown" src="019_Fonts/arrow_down.svg" alt="arrowDown">
-			<p id="Experience">
+			<!-- <img id="arrowDown" src="019_Fonts/arrow_down.svg" alt="arrowDown"> -->
+			<!-- <p id="Experience">
 				Experience
-			</p>
-			<a class="pink" href="experience.html#seness-wrapper">Seness &#10145;</a>
-			<a class="pink" href="experience.html#freeMenstrualProducts-wrapper">Free Menstrual Products &#10145;</a>
+			</p> -->
+			<div class="container">
+				<a id="seness" class="learn-more" href="experience.html#seness-wrapper">
+					<span class="circle orange" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">Seness</span>
+				</a>
+			</div>
+			<div class="container">
+				<a id="empoweringWomen" class="learn-more" href="experience.html#freeMenstrualProducts-wrapper">
+					<span class="circle orange" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<!-- <a class="button-text" href="experience.html#seness-wrapper">Free Menstrual Products</a> -->
+					<span class="button-text">Empowering Women</span>
+				</a>
+			</div>
+			<!-- <a class="pink" href="experience.html#seness-wrapper">Seness &#10145;</a>
+			<a class="pink" href="experience.html#freeMenstrualProducts-wrapper">Free Menstrual Products &#10145;</a> -->
 		</div>
 		<div class="subsites" id="DesignBox">
-			<img id="arrowRight" src="019_Fonts/arrow_right.svg" alt="arrowRight">
-			<p id="Design">
+			<!-- <img id="arrowRight" src="019_Fonts/arrow_right.svg" alt="arrowRight"> -->
+			<!-- <p id="Design">
 				Design
-			</p>
-			<a class="blue" href="design.html#logo-wrapper">Logo &#10145;</a>
-			<a class="blue" href="design.html#poster-wrapper">Poster &#10145;</a>
+			</p> -->
+			<div class="container">
+				<a id="logo" class="learn-more" href="design.html#logo-wrapper">
+					<span class="circle red" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">Logo</span>
+				</a>
+			</div>
+			<div class="container">
+				<a id="poster" class="learn-more" href="design.html#poster-wrapper">
+					<span class="circle red" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">Poster</span>
+				</a>
+			</div>
+			<!-- <a class="blue" href="design.html#logo-wrapper">Logo &#10145;</a>
+			<a class="blue" href="design.html#poster-wrapper">Poster &#10145;</a> -->
 		</div>
-
-		<!-- for small screen-->
-		<div class="subsites small" id="UserBox">
-			<p id="User">
-				User
-			</p>
-			<a class="yellow" href="user.html#personas-wrapper">Personas &#10145;</a>
-			<a class="yellow" href="user.html#researchAndTesting-wrapper">Research & Testing &#10145;</a>
-		</div>
-
-		<div class="subsites small" id="ExperienceBox">
-			<p id="Experience">
-				Experience
-			</p>
-			<a class="pink" href="experience.html#seness-wrapper">Seness &#10145;</a>
-			<a class="pink" href="experience.html#freeMenstrualProducts-wrapper">Free Menstrual Products &#10145;</a>
-		</div>
-
-		<div class="subsites small" id="DesignBox">
-			<p id="Design">
-				Design
-			</p>
-			<a class="blue" href="design.html#logo-wrapper">Logo &#10145;</a>
-			<a class="blue" href="design.html#poster-wrapper">Poster &#10145;</a>
-		</div>
-
+		
 		<div id="footer"> Design and Implementation @ChiaraGambirasio</div>
 	</div>
 
@@ -1894,4 +1922,3 @@
 
 
 </html>
-
