@@ -59,7 +59,6 @@ img {
     grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
     grid-template-columns: calc(100vw / 3) calc(100vw / 3) calc(100vw / 3);
     height: 100vh;
-    margin-left: -68px;
 }
 
 #UXD{
@@ -480,16 +479,10 @@ img {
 
 @media only screen and (max-width: 600px) {
 
-    body {
-        padding-bottom: 25px;
-    }
-
     #MainContent {
-        max-width: 100%;
-        height: 100%;
+        max-height: max-content;
         display: flex;
         flex-direction: column;
-        padding-top: 82px;
     }
 
     #UXD {
@@ -508,7 +501,7 @@ img {
 
     #AboutMe,
     #Contact {
-        writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb
     }
 
     .learn-more .circle,
@@ -520,8 +513,11 @@ img {
         color: #F9F4F4;
     }
 
+    /* .learn-more .circle .icon.arrow {
+        background: #F9F4F4;
+    } */
+
     .container {
-        margin: auto;
         width: 50%;
     }
     
@@ -555,6 +551,10 @@ img {
         width: 150px;
     }
 
+    #UserBox {
+        padding-top: 82px;
+    }
+
     #format,
     #format p {
         margin-top: 15px;
@@ -579,4 +579,5 @@ img {
     .small {
         display: block;
     }
+
 }
