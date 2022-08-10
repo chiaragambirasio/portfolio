@@ -504,6 +504,11 @@ img {
         writing-mode: horizontal-tb
     }
 
+    /* #AboutMe:hover,
+    #Contact:hover {
+        font-weight: bold !important;
+    } */
+
     .learn-more .circle,
     .learn-more {
         width: 13rem;

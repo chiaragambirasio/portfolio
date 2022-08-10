@@ -81,9 +81,9 @@ function DesignAction(event) {
 
   if (event.type == 'mouseover') {
     document.getElementById("D1").style.fill = "#F17A7E";
-  document.getElementById("D2").style.fill = "#F17A7E";
-  D3.style.fill = "#F17A7E";
-  document.body.style.cursor = "pointer";
+    document.getElementById("D2").style.fill = "#F17A7E";
+    D3.style.fill = "#F17A7E";
+    document.body.style.cursor = "pointer";
   }
   if (event.type == 'mouseout') {
     document.getElementById("D1").style.fill = "#4A6163";
@@ -93,13 +93,18 @@ function DesignAction(event) {
   }
 }
 
+var isBackground = true;
+
 // About Me Card
-AboutMe.onmouseover = function (){
+
+AboutMe.onmouseover = function () {
   AboutMe.style.fontWeight = "bold";
 }
 
-AboutMe.onmouseout = function (){
+AboutMe.onmouseout = function () {
+  if(isBackground == "false"){
   AboutMe.style.fontWeight = "normal";
+  }
 }
 
 AboutMe.onmousedown = function () {
@@ -118,12 +123,15 @@ closeButton.onmousedown = function () {
 
 // Contact Card
 
-Contact.onmouseover = function (){
+Contact.onmouseover = function () {
   Contact.style.fontWeight = "bold";
 }
 
-Contact.onmouseout = function (){
-  Contact.style.fontWeight = "normal";
+Contact.onmouseout = function () {
+  
+  if(isBackground == "false"){
+    Contact.style.fontWeight = "normal";
+    }
 }
 
 Contact.onmousedown = function () {
@@ -138,4 +146,10 @@ closeButton2.onmousedown = function () {
   ContactBackground.style.display = "none";
   Contact.style.fontWeight = "normal";
   sidebarbg.style.width = "68px";
+}
+
+if (sidebarbg.style.width == "100vw") {
+  isBackground = true;
+} else {
+  isBackground = false;
 }
